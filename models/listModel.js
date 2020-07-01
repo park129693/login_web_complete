@@ -4,12 +4,14 @@ var blogSchema = mongoose.Schema({
     title:{
         type:String
     },
-    desc:{
+    description:{
         type:String
     },
     author:{
+        type:String   
+    },
+    email:{
         type:String
-       
     },
     createAt:{
         type:Date,
