@@ -18,8 +18,7 @@ var session = require("express-session");
 
 
 dotenv.config()
-var password = process.env.PASSWORD
-const MONGO_URL = `mongodb+srv://root:${password}@cluster0.ze1q8.mongodb.net/mydb_1?retryWrites=true&w=majority`
+const MONGO_URL = process.env.MONGO_URL
 // app.use((req, res, next) => {
 //     if (mongoose.connection.readyState) next();
 //     else {
